@@ -1,0 +1,134 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+{% load static %}
+
+<div class="container-fluid gedf-wrapper my-2" >
+    <div class="row">
+        <div class="col-md-3">
+            <div class="card">
+                <div class="card-body">
+                    <a href="profile" style='text-decoration:none'><div class="h5">@{{request.user}}</div></a>
+                    
+                    <div class="h7 text-muted">Fullname : {{request.user.get_full_name}}</div>
+                    <div class="h7">Developer of web applications, JavaScript, PHP, Java, Python, Ruby, Java, Node.js,
+                        etc.
+                    </div>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <div class="h6 text-muted">Followers</div>
+                        <div class="h5">5.2342</div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="h6 text-muted">Following</div>
+                        <div class="h5">6758</div>
+                    </li>
+                    <li class="list-group-item">Vestibulum at eros</li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-6 gedf-main">
+
+            <!--- \\\\\\\Post-->
+            <div class="card gedf-card">
+                <div class="card-header">
+                    <ul class="nav nav-tabs card-header-tabs" id="myTab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="posts-tab" data-toggle="tab" href="#posts" role="tab" aria-controls="posts" aria-selected="true">Make
+                                a publication</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+                <div class="card-body">
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="posts" role="tabpanel" aria-labelledby="posts-tab">
+                            <form action="/makepost" method="POST">
+                            <div class="form-group">
+                                <label class="sr-only" for="message">post</label>
+                                <textarea class="form-control" id="message" name= 'message'rows="3" placeholder="What are you thinking?"></textarea>
+                            </div>
+
+                        </div>
+                        
+                    </div>
+                    <div class="btn-toolbar justify-content-between">
+                        <div class="btn-group">
+                            {% csrf_token %}
+                            <button type="submit" class="btn btn-primary">share</button>
+                        </div>
+                    </form>
+                    </div>
+                </div>
+            </div>
+            <!-- Post /////-->
+
+            <!--- \\\\\\\Post-->
+            {% for p in post%}
+            <div class="card gedf-card">
+                <div class="card-header">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="mr-2">
+                                <!-- <img class="rounded-circle" width="45" src="/media/users/images/{{p.user.username.pPhoto}}" alt=""> -->
+                            </div>
+                            <div class="ml-2">
+                                <a href='' class="h5 m-0" style='text-decoration:none'>@{{p.user}}</a>
+                                <div class="h7 text-muted">{{p.user.get_full_name}}</div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="dropdown">
+                                <button class="btn btn-link dropdown-toggle" type="button" id="gedf-drop1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="fa fa-ellipsis-h"></i>
+                                </button>
+                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="gedf-drop1">
+                                    <div class="h6 dropdown-header">Configuration</div>
+                                    <a class="dropdown-item" href="#">Save</a>
+                                    <a class="dropdown-item" href="#">Hide</a>
+                                    <a class="dropdown-item" href="#">Report</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="card-body">
+                    <div class="text-muted h7 mb-2"> <i class="fa fa-clock-o"></i>{{p.date}}</div>
+                    
+
+                    <p class="card-text">
+                        {{p.content}}
+                    </p>
+                </div>
+                <div class="card-footer">
+                    <a href="#" class="card-link"><i class="fa fa-gittip"></i> Like</a>
+                    <a href="#" class="card-link"><i class="fa fa-comment"></i> Comment</a>
+                    <a href="#" class="card-link"><i class="fa fa-mail-forward"></i> Share</a>
+                </div>
+            </div>
+            {%endfor%}
+            <!-- Post /////-->
+
+
+           
+
+
+        </div>
+        <div class="col-md-3">
+            {%for i in usr%}
+            <div class="card gedf-card">
+                <div class="card-body">
+                    <a href="profile/{{i.username}}"style='text-decoration:none'><h5 class="card-title">@{{i.username}}</h5></a>
+                    <h6 class="card-subtitle mb-2 text-muted">{{i.fname}} {{i.lname}}</h6>
+                    <p class="card-text">{{i.institute}}</p>
+                </div>
+            </div>
+            {%endfor%}
+        </div>
+    </div>
+</div>
+
+{% endblock body %}
