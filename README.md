@@ -80,7 +80,11 @@ You can refer to the [slack channel link](https://join.slack.com/t/kwoc-koss/sha
     ```
 - Run app locally.
     ```
-    python manage.py runserver
+    # for development, use dev_settings.py file
+    python manage.py runserver --settings hiya.dev_settings
+
+    #for production, use settings.py file
+    python manage.py runserver 
     ```
 
 
