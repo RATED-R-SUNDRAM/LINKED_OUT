@@ -23,7 +23,9 @@ urlpatterns = [
     path("", include("home.urls")),
     path("admin/", admin.site.urls),
     path("chat/", include("chat.urls")),
-    path("<str:room>/", room, name="room"),
+    # prefixing below url with room/ here since Django tries to
+    # open this page when home page is called(/)
+    path("room/<str:room>/", room, name="room"),
     path("checkview", checkview, name="checkview"),
     path("send", send, name="send"),
     path("getMessages/<str:room>/", getMessages, name="getMessages"),
