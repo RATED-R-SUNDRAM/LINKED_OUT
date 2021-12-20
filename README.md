@@ -1,4 +1,4 @@
-# Linked Out
+# <img src="https://raw.githubusercontent.com/SachinMittal1766/LINKED_OUT/master/media/users/images/LINKED_logo.png" width="36"> Linked Out
 
 
 ![GitHub stars](https://img.shields.io/github/stars/RATED-R-SUNDRAM/LINKED_OUT?style=social)
