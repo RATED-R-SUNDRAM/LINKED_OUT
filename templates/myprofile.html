@@ -9,19 +9,8 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 
-  <style>
-    .avatar {
-      vertical-align: middle;
-      width: 40px;
-      height: 40px;
-      border-radius: 50%;
-      object-fit: cover;
-    }
-
-    .bg-default {
-      background-color: rgb(230, 238, 248);
-    }
-  </style>
+  <!-- Css -->
+  <link rel="stylesheet" href="myprofile.css">
 
   <title>Document</title>
 </head>
@@ -40,281 +29,189 @@
                 d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
             </svg></button>
         </form>
+        <button onclick="myFunction()" class="theme-toggle-button">
+            <svg class="icon" style="width:24px;height:24px" viewBox="0 0 24 24">
+                <path fill="currentColor" d="M7.5,2C5.71,3.15 4.5,5.18 4.5,7.5C4.5,9.82 5.71,11.85 7.53,13C4.46,13 2,10.54 2,7.5A5.5,5.5 0 0,1 7.5,2M19.07,3.5L20.5,4.93L4.93,20.5L3.5,19.07L19.07,3.5M12.89,5.93L11.41,5L9.97,6L10.39,4.3L9,3.24L10.75,3.12L11.33,1.47L12,3.1L13.73,3.13L12.38,4.26L12.89,5.93M9.59,9.54L8.43,8.81L7.31,9.59L7.65,8.27L6.56,7.44L7.92,7.35L8.37,6.06L8.88,7.33L10.24,7.36L9.19,8.23L9.59,9.54M19,13.5A5.5,5.5 0 0,1 13.5,19C12.28,19 11.15,18.6 10.24,17.93L17.93,10.24C18.6,11.15 19,12.28 19,13.5M14.6,20.08L17.37,18.93L17.13,22.28L14.6,20.08M18.93,17.38L20.08,14.61L22.28,17.15L18.93,17.38M20.08,12.42L18.94,9.64L22.28,9.88L20.08,12.42M9.63,18.93L12.4,20.08L9.87,22.27L9.63,18.93Z" />
+            </svg>
+        </button>
       </div>
     </nav>
-    <!-- content -->
-    <div class="container">
-      <div class="row">
-        <!-- column 1 -->
-        <div class="col-sm-2 ">
-          <ul class="nav flex-column m-2 mt-5 p-3 border rounded bg-white">
-            <li class="nav-item">
-              <a class="nav-link" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">My Profile</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Messages</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Collaborations</a>
-            </li>
-          </ul>
+<div class="container">
+<div class="profile-wrapper">
+<div class="profile-section-user">
+    <div class="profile-cover-img"><img src="https://bootdey.com/img/Content/flores-amarillas-wallpaper.jpeg" alt=""></div>
+    <div class="profile-info-brief p-10"><img class="img-fluid user-profile-avatar" src="https://bootdey.com/img/Content/avatar/avatar6.png" alt="">
+        <div class="text-center">
+            <h5 class="text-uppercase mb-4">John Doe</h5>
+            <p class="text-muted fz-base">I'm John Doe a web developer and software engineer. I studied computer science and software engineering.</p>
         </div>
-        <!-- column 2 -->
-        <div class="col-sm m-3 mt-5">
-          <!-- info card row -->
-          <div class="row">
-            <div class="card mb-3 p-0">
-              <div class="row g-0">
-                <!-- image column -->
-                <div class="col-md-4">
-                  <img class="img-fluid"
-                    src="https://images.unsplash.com/photo-1511367461989-f85a21fda167?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YWJzdHJhY3QlMjBwcm9maWxlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80"
-                    alt="profile pic">
+    </div>
+    <!-- /.profile-info-brief -->
+    <hr class="m-0">
+    <div class="hidden-sm-down">
+        <hr class="m-0">
+        <div class="profile-info-contact p-4">
+            <h6 class="mb-3">Contact Information</h6>
+            <table class="table">
+                <tbody>
+                    <tr>
+                        <td><strong>URL:</strong></td>
+                        <td>
+                            <p class="text-muted mb-0">Rathemes.com/inde.html</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>EMAIL:</strong></td>
+                        <td>
+                            <p class="text-muted mb-0">rathemes@gmail.com</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>PHONE:</strong></td>
+                        <td>
+                            <p class="text-muted mb-0">01145525755</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>SKYPE:</strong></td>
+                        <td>
+                            <p class="text-muted mb-0">Rathemes</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- /.profile-info-contact -->
+        <hr class="m-0">
+        <div class="profile-info-general p-4">
+            <h6 class="mb-3">General Information</h6>
+            <table class="table">
+                <tbody>
+                    <tr>
+                        <td><strong>JOB:</strong></td>
+                        <td>
+                            <p class="text-muted mb-0">Web Developer</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>POSITION:</strong></td>
+                        <td>
+                            <p class="text-muted mb-0">Team Manager</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>STUDIED:</strong></td>
+                        <td>
+                            <p class="text-muted mb-0">Computer Science</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>LAST SEEN:</strong></td>
+                        <td>
+                            <p class="text-muted mb-0">Yesterday 8:00 AM</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- /.profile-info-general -->
+        <hr class="m-0">
+    </div>
+    <!-- /.hidden-sm-down -->
+</div>
+<!-- /.profile-section-user -->
+<div class="profile-section-main">
+    <!-- Nav tabs -->
+    <ul class="nav nav-tabs profile-tabs" role="tablist">
+        <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#profile-overview" role="tab">Timeline</a></li>
+    </ul>
+    <!-- /.nav-tabs -->
+    <!-- Tab panes -->
+    <div class="tab-content profile-tabs-content">
+        <div class="tab-pane active" id="profile-overview" role="tabpanel">
+            <div class="post-editor">
+                <textarea name="post-field" id="post-field" class="post-field" placeholder="Write Something Cool!"></textarea>
+                <div class="d-flex">
+                    <button class="btn btn-success px-4 py-1">Post</button>
                 </div>
-                <!-- info column -->
-                <div class="col-md-8">
-                  <div class="card-body row">
-                    <div class="col-10">
-                      <h5 class="card-title">Name Lastname</h5>
-                      <small class="text-muted">@username</small>
+            </div>
+            <!-- /.post-editor -->
+            <div class="stream-posts">
+                <div class="stream-post">
+                    <div class="sp-author">
+                        <a href="#" class="sp-author-avatar"><img src="https://bootdey.com/img/Content/avatar/avatar6.png" alt=""></a>
+                        <h6 class="sp-author-name"><a href="#">John Doe</a></h6></div>
+                    <div class="sp-content">
+                        <div class="sp-info">posted 1h ago</div>
+                        <p class="sp-paragraph mb-0">Auk Soldanella plainscraft acetonylidene wolfishness irrecognizant Candolleaceae provision Marsipobranchii arpen Paleoanthropus supersecular inidoneous autoplagiarism palmcrist occamy equestrianism periodontoclasia mucedin overchannel goelism decapsulation pourer zira</p>
                     </div>
-                    <div class="col-auto text-end">
-                      <button type="button" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal"
-                        data-bs-target="#editProfile">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                          class="bi bi-pencil" viewBox="0 0 16 16">
-                          <path
-                            d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207 11.207 2.5zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293l6.5-6.5zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z" />
-                        </svg>
-                        Edit</button>
+                    <!-- /.sp-content -->
+                </div>
+                <!-- /.stream-post -->
+                <div class="stream-post">
+                    <div class="sp-author">
+                        <a href="#" class="sp-author-avatar"><img src="https://bootdey.com/img/Content/avatar/avatar6.png" alt=""></a>
+                        <h6 class="sp-author-name"><a href="#">Palmira Guthridge</a></h6></div>
+                    <div class="sp-content">
+                        <div class="sp-info">posted 1h ago</div>
+                        <p class="sp-paragraph mb-0">Auk Soldanella plainscraft acetonylidene wolfishness irrecognizant Candolleaceae provision Marsipobranchii arpen Paleoanthropus supersecular inidoneous autoplagiarism palmcrist occamy equestrianism periodontoclasia mucedin overchannel goelism decapsulation pourer zira</p>
                     </div>
-                  </div>
-                  <ul class="list-group list-group-flush">
-                    <li class="list-group-item"> 40 collaborations | 4.5 rating</li>
-                    <li class="list-group-item"> Institute | Place</li>
-                    <li class="list-group-item">
-                      <div class="form-check form-switch form-check-inline">
-                        <input class="form-check-input" type="checkbox" id="mentorDisplay" disabled>
-                        <label class="form-check-label">Mentor</label>
-                      </div>
-                      <div class="form-check form-switch form-check-inline">
-                        <input class="form-check-input" type="checkbox" id="menteeDisplay" disabled>
-                        <label class="form-check-label">Mentee</label>
-                      </div>
-                    </li>
-                  </ul>
-                  <div class="card-body">
-                    <a href="#" class="card-link">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                        class="bi bi-people" viewBox="0 0 16 16">
-                        <path
-                          d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1h8zm-7.978-1A.261.261 0 0 1 7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002a.274.274 0 0 1-.014.002H7.022zM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0zM6.936 9.28a5.88 5.88 0 0 0-1.23-.247A7.35 7.35 0 0 0 5 9c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816zM4.92 10A5.493 5.493 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275zM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0zm3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4z" />
-                      </svg>
-                      See collaborations</a>
-                    <a href="#" class="card-link" data-bs-toggle="modal" data-bs-target="#contactinfo">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                        class="bi bi-journal" viewBox="0 0 16 16">
-                        <path
-                          d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2z" />
-                        <path
-                          d="M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1z" />
-                      </svg>
-                      See contact info
-                    </a>
-                  </div>
+                    <!-- /.sp-content -->
                 </div>
-              </div>
-            </div>
-          </div>
-          <!-- about card row -->
-          <div class="card">
-            <div class="card-header">
-              About and Experience
-            </div>
-            <div class="card-body">
-              <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius corrupti aperiam
-                impedit blanditiis, neque perspiciatis omnis fuga tempore in cumque officia optio expedita odio iure,
-                dolore culpa mollitia assumenda atque asperiores sit nemo deserunt facilis? Quasi temporibus rem quae
-                labore cum, quis esse nihil delectus ullam soluta, earum pariatur ab fugiat dignissimos necessitatibus
-                quidem amet totam. Asperiores accusantium ea voluptatem accusamus magni? Aspernatur eius eos laborum
-                dicta error quasi maxime, quisquam rerum consectetur ipsa doloribus quibusdam modi assumenda dignissimos
-                minima harum, necessitatibus soluta! Animi molestias architecto aspernatur. Excepturi, illo praesentium
-                quod, veniam voluptatibus error veritatis obcaecati molestiae minus, culpa eos?</p>
-            </div>
-          </div>
-          <!-- add post row -->
-          <form class="row p-2 mt-5 border rounded bg-white text-center">
-            <div class="col-md-1">
-              <img
-                src="https://images.unsplash.com/photo-1511367461989-f85a21fda167?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YWJzdHJhY3QlMjBwcm9maWxlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80"
-                alt="profile pic" class="avatar">
-            </div>
-            <div class="col-sm-10">
-              <textarea class="form-control bg-light" placeholder="Add post" aria-label="Post"></textarea>
-            </div>
-            <div class="col-sm">
-              <button type="submit" class="btn btn-primary">Post</button>
-            </div>
-          </form>
-          <!-- row for post -->
-          <div class="card mt-3">
-            <div class="card-header">
-              <div class="row">
-                <div class="col-md-1 text-center my-auto">
-                  <img
-                    src="https://images.unsplash.com/photo-1511367461989-f85a21fda167?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YWJzdHJhY3QlMjBwcm9maWxlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80"
-                    alt="profile pic" class="avatar">
+                <!-- /.stream-post -->
+                <div class="stream-post">
+                    <div class="sp-author">
+                        <a href="#" class="sp-author-avatar"><img src="https://bootdey.com/img/Content/avatar/avatar6.png" alt=""></a>
+                        <h6 class="sp-author-name"><a href="#">Meghann Fraser</a></h6></div>
+                    <div class="sp-content">
+                        <div class="sp-info">posted 2h ago</div>
+                        <p class="sp-paragraph mb-0">Auk Soldanella plainscraft acetonylidene wolfishness irrecognizant Candolleaceae provision Marsipobranchii arpen Paleoanthropus supersecular inidoneous autoplagiarism palmcrist occamy equestrianism periodontoclasia mucedin overchannel goelism decapsulation pourer zira</p>
+                    </div>
+                    <!-- /.sp-content -->
                 </div>
-                <div class="col my-auto">
-                  <p style="margin-bottom: 0;"> User Name</p>
-                  <p style="margin-bottom: 0;"><small class="text-muted">20th Jun 2021</small></p>
+                <!-- /.stream-post -->
+                <div class="stream-post">
+                    <div class="sp-author">
+                        <a href="#" class="sp-author-avatar"><img src="https://bootdey.com/img/Content/avatar/avatar6.png" alt=""></a>
+                        <h6 class="sp-author-name"><a href="#">Kent Lemaitre</a></h6></div>
+                 <div class="sp-content">
+                        <div class="sp-info">posted 1h ago</div>
+                        <p class="sp-paragraph mb-0">Auk Soldanella plainscraft acetonylidene wolfishness irrecognizant Candolleaceae provision Marsipobranchii arpen Paleoanthropus supersecular inidoneous autoplagiarism palmcrist occamy equestrianism periodontoclasia mucedin overchannel goelism decapsulation pourer zira</p>
+                    </div>
+                    <!-- /.sp-content -->
                 </div>
-              </div>
-            </div>
-            <div class="card-body">
-              <p class="card-text">Post Content Consequuntur, modi obcaecati. Illo nostrum velit harum inventore facilis
-                corporis culpa quibusdam id odio, tenetur dolor! Alias molestiae similique necessitatibus suscipit
-                dolorem minus rerum reiciendis hic?</p>
-            </div>
-          </div>
-          <div class="card mt-3">
-            <div class="card-header">
-              <div class="row">
-                <div class="col-md-1 text-center my-auto">
-                  <img
-                    src="https://images.unsplash.com/photo-1511367461989-f85a21fda167?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YWJzdHJhY3QlMjBwcm9maWxlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80"
-                    alt="profile pic" class="avatar">
+                <!-- /.stream-post -->
+                <div class="stream-post mb-0">
+                    <div class="sp-author">
+                        <a href="#" class="sp-author-avatar"><img src="https://bootdey.com/img/Content/avatar/avatar6.png" alt=""></a>
+                        <h6 class="sp-author-name"><a href="#">Loria Lambing</a></h6></div>
+                    <div class="sp-content">
+                        <div class="sp-info">posted 2 days ago</div>
+                        <p class="sp-paragraph">Auk Soldanella plainscraft acetonylidene wolfishness irrecognizant Candolleaceae provision Marsipobranchii arpen Paleoanthropus supersecular inidoneous</p>
+                        <p class="sp-paragraph">autoplagiarism palmcrist occamy equestrianism periodontoclasia mucedin overchannel goelism decapsulation pourer zira</p>
+                    </div>
+                    <!-- /.sp-content -->
                 </div>
-                <div class="col my-auto">
-                  <p style="margin-bottom: 0;"> User Name</p>
-                  <p style="margin-bottom: 0;"><small class="text-muted">20th Jun 2021</small></p>
-                </div>
-              </div>
+                <!-- /.stream-post -->
             </div>
-            <div class="card-body">
-              <p class="card-text">Post Content Consequuntur, modi obcaecati. Illo nostrum velit harum inventore facilis
-                corporis culpa quibusdam id odio, tenetur dolor! Alias molestiae similique necessitatibus suscipit
-                dolorem minus rerum reiciendis hic?</p>
-            </div>
-          </div>
-          <div class="card mt-3">
-            <div class="card-header">
-              <div class="row">
-                <div class="col-md-1 text-center my-auto">
-                  <img
-                    src="https://images.unsplash.com/photo-1511367461989-f85a21fda167?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YWJzdHJhY3QlMjBwcm9maWxlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80"
-                    alt="profile pic" class="avatar">
-                </div>
-                <div class="col my-auto">
-                  <p style="margin-bottom: 0;"> User Name</p>
-                  <p style="margin-bottom: 0;"><small class="text-muted">20th Jun 2021</small></p>
-                </div>
-              </div>
-            </div>
-            <div class="card-body">
-              <p class="card-text">Post Content Consequuntur, modi obcaecati. Illo nostrum velit harum inventore facilis
-                corporis culpa quibusdam id odio, tenetur dolor! Alias molestiae similique necessitatibus suscipit
-                dolorem minus rerum reiciendis hic?</p>
-            </div>
-          </div>
-
+            <!-- /.stream-posts -->
         </div>
-      </div>
     </div>
-  </div>
-
-  <!-- Contact info -->
-  <div class="modal fade" id="contactinfo" tabindex="-1" aria-labelledby="contactinfoLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title">Contact Info</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <p>Phone Number: 9xxxxxxxx</p>
-          <p>Email: mailid@mail.com</p>
-          <p>github.com/username</p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Edit</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Edit Profile -->
-  <div class="modal fade" id="editProfile" tabindex="-1" aria-labelledby="editLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title">Edit Profile</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-
-
-          <form method="POST" action='/update' enctype='multipart/form-data'>
-            <div class="mb-3">
-              <label for="formFile" class="form-label">Profile picture</label>
-              {{form.media}}
-              {{form.as_p}}
-              <input type="file" class="form-control" id="myfile" name="myfile" >
-            </div>
-            {% csrf_token %}
-            <div class="row mb-3">
-              <div class="col">
-                <input type="text" class="form-control" placeholder="First name" aria-label="First name">
-              </div>
-              <div class="col">
-                <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
-              </div>
-            </div>
-            
-            <div class="mb-3 col-md-8">
-              <input type="text" class="form-control" placeholder="Phone Number">
-            </div>
-            
-            <div class="row mb-3">
-              <div class="col">
-                <input type="text" class="form-control" placeholder="Institute/Company" aria-label="Institute/Company">
-              </div>
-              <div class="col">
-                <input type="text" class="form-control" placeholder="Place" aria-label="Place">
-              </div>
-            </div>
-            <div class="mb-3">
-              <div class="form-check form-switch form-check-inline">
-                <input class="form-check-input" type="checkbox" id="mentorDisplay">
-                <label class="form-check-label">Mentor</label>
-              </div>
-              <div class="form-check form-switch form-check-inline">
-                <input class="form-check-input" type="checkbox" id="menteeDisplay">
-                <label class="form-check-label">Mentee</label>
-              </div>
-            </div>
-            <textarea class="form-control mb-3" placeholder="Add about info and experience"
-              aria-label="About"></textarea>
-            <textarea class="form-control mb-3" placeholder="Add other links" aria-label="About"></textarea>
-          </form>
-        </div>
-
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-          <button type="button" class="btn btn-primary">Save Changes</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
+    <!-- /.tab-content -->
+</div>
+<!-- /.profile-section-main -->
+</div>
+</div>
 
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
     crossorigin="anonymous"></script>
+    <script>
+      function myFunction() {
+         var element = document.body;
+         element.classList.toggle("dark-mode");
+      }
+      </script>
 </body>
 </html>
