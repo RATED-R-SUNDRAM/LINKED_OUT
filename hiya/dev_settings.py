@@ -1,6 +1,6 @@
 """
-Production Django settings for the project.
-Use this file when deploying online
+Development Django settings for the project.
+Use this file when developing locally
 """
 
 from pathlib import Path
