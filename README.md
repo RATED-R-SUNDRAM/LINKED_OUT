@@ -103,4 +103,4 @@ Currently, This project is under development in the [KWOC 2021](https://kwoc.kos
 
 ### Contributors
 
-![Contributors](https://contributors-img.web.app/image?repo=RATED-R-SUNDRAM/LINKED_OUT)
+![Contributors ](https://contributors-img.web.app/image?repo=RATED-R-SUNDRAM/LINKED_OUT)
